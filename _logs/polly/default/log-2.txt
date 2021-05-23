@@ -1,0 +1,67 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "cmake" "--version"
+cmake version 3.16.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/daniel/Merlin13-666/workspace/projects/lab-7/tools/polly/default.cmake`
+  `-DCMAKE_INSTALL_PREFIX=/home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "cmake" "-H." "-B/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/daniel/Merlin13-666/workspace/projects/lab-7/tools/polly/default.cmake" "-DCMAKE_INSTALL_PREFIX=/home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default"
+-- [polly] Used toolchain: Default
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/daniel/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 6a68b05 | Config-ID: 154b730 ]
+-- [hunter] GTEST_ROOT: /home/daniel/projects/hunter/_Base/xxxxxxx/6a68b05/154b730/Install (ver.: 1.10.0-p1)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default`
+  `--target`
+  `install`
+  `--`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "cmake" "--build" "/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default" "--target" "install" "--"
+gmake[1]: вход в каталог «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+gmake[2]: вход в каталог «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+gmake[2]: выход из каталога «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+[ 50%] Built target print
+gmake[2]: вход в каталог «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+gmake[2]: выход из каталога «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+[100%] Built target demo
+gmake[1]: выход из каталога «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/bin/demo
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/lib/libprint.a
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/include
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/include/print.hpp
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/cmake/print-config.cmake
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/cmake/print-config-noconfig.cmake
+Execute command: [
+  `ctest`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default]> "ctest"
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+

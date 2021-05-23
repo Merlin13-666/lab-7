@@ -1,0 +1,1 @@
+"cmake" "-H." "-B/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/daniel/Merlin13-666/workspace/projects/lab-7/tools/polly/default.cmake" "-DCMAKE_INSTALL_PREFIX=/home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default" "-DCPACK_GENERATOR=DEB"

@@ -1,0 +1,5 @@
+/usr/bin/demo
+/usr/lib/libprint.a
+/usr/include/print.hpp
+/usr/cmake/print-config.cmake
+/usr/cmake/print-config-noconfig.cmake

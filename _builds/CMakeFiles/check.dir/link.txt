@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/check.dir/tests/test1.cpp.o  -o check  libprint.a /home/daniel/projects/hunter/_Base/xxxxxxx/6a68b05/154b730/Install/lib/libgtest_maind.a /home/daniel/projects/hunter/_Base/xxxxxxx/6a68b05/154b730/Install/lib/libgtestd.a -lpthread 

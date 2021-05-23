@@ -1,0 +1,99 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "cmake" "--version"
+cmake version 3.16.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/daniel/Merlin13-666/workspace/projects/lab-7/tools/polly/default.cmake`
+  `-DCMAKE_INSTALL_PREFIX=/home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default`
+  `-DCPACK_GENERATOR=DEB`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "cmake" "-H." "-B/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/daniel/Merlin13-666/workspace/projects/lab-7/tools/polly/default.cmake" "-DCMAKE_INSTALL_PREFIX=/home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default" "-DCPACK_GENERATOR=DEB"
+-- [polly] Used toolchain: Default
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/daniel/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 6a68b05 | Config-ID: 154b730 ]
+-- [hunter] GTEST_ROOT: /home/daniel/projects/hunter/_Base/xxxxxxx/6a68b05/154b730/Install (ver.: 1.10.0-p1)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default`
+  `--target`
+  `install`
+  `--`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7]> "cmake" "--build" "/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default" "--target" "install" "--"
+gmake[1]: вход в каталог «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+gmake[2]: вход в каталог «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+gmake[2]: выход из каталога «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+[ 50%] Built target print
+gmake[2]: вход в каталог «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+gmake[2]: выход из каталога «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+[100%] Built target demo
+gmake[1]: выход из каталога «/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default»
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/bin/demo
+-- Up-to-date: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/lib/libprint.a
+-- Up-to-date: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/include
+-- Up-to-date: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/include/print.hpp
+-- Up-to-date: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/cmake/print-config.cmake
+-- Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_install/default/cmake/print-config-noconfig.cmake
+Execute command: [
+  `ctest`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default]> "ctest"
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+
+Execute command: [
+  `cpack`
+  `--verbose`
+  `-GDEB`
+]
+[/home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default]> "cpack" "--verbose" "-GDEB"
+CPack: Enable Verbose
+CPack Verbose: Read CPack config file:
+CPack Verbose: Read CPack configuration file: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/CPackConfig.cmake
+CPack Verbose: Specified generator: DEB
+CPack Verbose: Use generator: cmCPackDebGenerator
+CPack Verbose: For project: print
+CPack: Create package using DEB
+CPack Verbose: Read description file: /home/daniel/Merlin13-666/workspace/projects/lab-7/DESCRIPTION
+CPack Verbose: [DEB] requested component grouping = ONE_PER_GROUP
+CPack: Install projects
+CPack: - Run preinstall target for: print
+CPack: - Install project: print []
+CPack Verbose: Install configuration: ""
+CPack Verbose: Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux/usr/bin/demo
+CPack Verbose: Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux/usr/lib/libprint.a
+CPack Verbose: Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux/usr/include
+CPack Verbose: Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux/usr/include/print.hpp
+CPack Verbose: Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux/usr/cmake/print-config.cmake
+CPack Verbose: Installing: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux/usr/cmake/print-config-noconfig.cmake
+CPack: Create package
+CPack Verbose: Package files to: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/_CPack_Packages/Linux/DEB/print-0.1.0.0-Linux.deb
+CPack Verbose: Packaging all groups in one package...(CPACK_COMPONENTS_ALL_[GROUPS_]IN_ONE_PACKAGE is set)
+-- CPACK_DEBIAN_PACKAGE_DEPENDS not set, the package will have no dependencies.
+CPack Verbose: Copying final package(s) [1]:
+CPack: - package: /home/daniel/Merlin13-666/workspace/projects/lab-7/_builds/default/print-0.1.0.0-Linux.deb generated.

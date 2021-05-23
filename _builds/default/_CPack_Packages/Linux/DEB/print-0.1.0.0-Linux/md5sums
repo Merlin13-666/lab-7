@@ -1,0 +1,5 @@
+b127bd88242e15181f3c28ca9fe38bed  usr/cmake/print-config.cmake
+1331ec2d3e2ccb013920a509ff2fedde  usr/cmake/print-config-noconfig.cmake
+169ca00355b1b71e10bf02163df1842c  usr/include/print.hpp
+4bffe3d427000c6695dbf075e12fded0  usr/bin/demo
+33c680cb0de446643a15fe0af5af6104  usr/lib/libprint.a
